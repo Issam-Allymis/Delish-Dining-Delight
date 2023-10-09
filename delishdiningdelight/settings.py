@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-issamallymi-delishdinin-43rrtulqzry.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['delish-dining-delight-f4825f9e0fc7.herokuapp.com']
 
 
 
