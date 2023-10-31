@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% load i18n %}
@@ -9,16 +10,21 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-md-10 mt-3 offset-md-1">
 
-      <h3>{% trans "Sign In" %}</h3>
+      <div class="d-flex justify-content-center custom-container">
+        <h2>{% trans "Sign In" %}</h2>
+      </div>
 
-      <p>
-        {% blocktrans %}Welcome to Delish Dining Delight blog.
-        If you want to be able share and express your opinions and thoughts, 
-        then please <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-      </p>
-
+      <div class="offset-md-4 custom-container text-center">
+        <p>
+          {% blocktrans %}Welcome to Delish Dining Delight blog.
+          If you want to be able share and express your opinions and thoughts, 
+          then please <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+        </p>
+    
+    </div>
+      <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
@@ -30,5 +36,5 @@
     </div>
   </div>
 </div>
-
+</div>
 {% endblock content %}

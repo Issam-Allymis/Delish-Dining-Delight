@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-md-8 offset-md-2 alert-margin">
                 {% for message in messages %}
-                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg"
+                <div class="alert {{ message.tags }} alert-dismissible fade show success-alert" id="msg"
                 role="alert">
                 {{ message | safe }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
@@ -83,8 +83,8 @@
           <div class="col-12 mt-5 intro-header">
             <h1>You want it, we got it</h1>
             <p>
-                The perfect collection of Juicy,
-                Succulent Delight to satisfy the tongue and belly
+                The <span class="logo">perfect</span> collection of <span class="logo">Juicy</span>,
+                <span class="logo">Succulent</span> Delight to satisfy the tongue and belly
             </p>
           </div>
         </div>
