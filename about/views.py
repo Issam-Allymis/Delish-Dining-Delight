@@ -3,7 +3,7 @@ from django.views import generic, View
 from .models import About
 
 
-class About(View):
+class AboutPage(View):
     """
     Class based View to render About Page
     """

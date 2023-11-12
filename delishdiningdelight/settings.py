@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 import dj_database_url
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
@@ -35,10 +36,12 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
-    '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu105.gitpod.io',
+    '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu106.gitpod.io',
     '127.0.0.1'
     ]
 
+# To prevent 500 errors during login and registrarion
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
 
@@ -107,23 +110,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'delishdiningdelight.wsgi.application'
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
  }
 
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

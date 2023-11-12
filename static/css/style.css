@@ -227,8 +227,7 @@ p {
 
 /* Width Adjustments  */
 
-.image-container  {
-    width: 200px; 
+.image-container  { 
     height: auto;
 }
 
@@ -244,7 +243,12 @@ label {
 .custom-container {
     width: 50%; 
     margin: 0 auto;
-  }
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+}
 
 .mb-4 {
     margin-bottom: 1.5rem!important;
@@ -275,19 +279,13 @@ label {
 /*....................... Index Page  */
 
 .div-post {
-    background-color: #434141;
-    border-radius: 20%;
+    border-radius: 10%;
     box-shadow: 10px 5px 5px grey;
     border: 1px solid darkgrey;
-    justify-content: space-around;
 }
 
 .card-img, .card-img-top {
     border-radius: 20%;
-}
-
-.image-container {
-    margin-left: -50px;
 }
 
 /* ....................About page */

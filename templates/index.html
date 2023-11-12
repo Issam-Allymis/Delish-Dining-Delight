@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% load static %}
@@ -17,7 +18,7 @@
                                 {% if "placeholder" in post.featured_image.url %}
                                     <img class="card-img-top mb-3" src="{% static 'images/aed-steak.webp' %}" alt="placeholder image">
                                 {% else %}
-                                    <img class="card-img-top mb-3" src="../static/images/flavoring-steak.jpg" alt="placeholder">
+                                    <img class="card-img-top mb-3" src="{{ post.featured_image.url }}" alt="placeholder">
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
@@ -25,7 +26,9 @@
                                 <p>{{ post.excerpt }}</p>
                             </a>
                             <!-- Post details along with likes/comments -->
-                            <p class="text-muted h6 mb-3">{{ post.created_on}} <i class="far fa-heart "></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ post.total_comments }}</p>
+                            <p class="text-muted h6 mb-3">
+                                {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ post.total_comments }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -37,61 +40,7 @@
             </div>
         </div>
     
-        <!-- Second Post Container -->
-        <div class="col-md-4 mt-3">
-            <div class="row div-post">
-                {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card-mb-4">
-                        <div class="card-body">
-                            <!-- Image container that gets a picture uploaded for each post -->
-                            <div class="image-container">
-                                <img class="card-img-top mb-3" src="{% static 'images/Amazing-Steak.jpg' %}" alt="Image 1">
-                            </div>
-                            <a href="{% url 'another_post_detail' post.slug %}" class="post-link">
-                                <h2>{{ post.title }}</h2>
-                                <p>{{ post.excerpt }}</p>
-                            </a>
-                            <p class="text-muted h6 mb-3">{{ post.created_on}} <i class="far fa-heart "></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ post.total_comments }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% if forloop.counter|divisibleby:2 %}
-                </div>
-                <div class="row">
-                {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    
-        <!-- Third Post Container -->
-        <div class="col-md-4 mt-3">
-            <div class="row div-post">
-                {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card-mb-4">
-                        <div class="card-body">
-                            <!-- Image container that gets a picture uploaded for each post -->
-                            <div class="image-container">
-                                <img class="card-img-top mb-3" src="{% static 'images/it.cat_steak.png' %}" alt="Image 1">
-                            </div>
-                            <a href="{% url 'another_post_detail' post.slug %}" class="post-link">
-                                <h2>{{ post.title }}</h2>
-                                <p>{{ post.excerpt }}</p>
-                            </a>
-                            <p class="text-muted h6 mb-3">{{ post.created_on}} <i class="far fa-heart "></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ post.total_comments }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% if forloop.counter|divisibleby:2 %}
-                </div>
-                <div class="row">
-                {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
+        
 <div>
     <!-- Page navigation that lets the user go to the next page to view more posts -->
     {% if is_paginated %}
@@ -101,10 +50,12 @@
             <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Prev</a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number}}" class="page-link"> Next &raquo;</a></li>
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Next &raquo;</a></li>
             {% endif %}
         </ul>
     </nav>
     {% endif %}
 </div>
 {% endblock %}
+
+
