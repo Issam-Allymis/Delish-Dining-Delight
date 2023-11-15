@@ -31,6 +31,7 @@ The tasks during the development of this project were closely aligned with Code 
 
 ## Visual Design
 ### Wireframes
+I utilised [Canva](https://www.canva.com/) to craft the initial wireframes, outlining the intended appearance and structure of the blog. However, as the development progressed, I made the decision to omit certain features that were initially planned.
 
 ## Technologies Used
 ### Languages
