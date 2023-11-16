@@ -1,4 +1,7 @@
 # DelishDiningDelight Project portfolio 4
+
+![banner](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c7a21173-3058-4e18-beea-f59872654ce6)
+
 The blog's initial design and feature set deviated from my original intent. Originally conceived with a broader range of functionalities, I opted for a simplified approach due to time constraints and the realization that a more intricate project would be challenging to deliver within the available timeframe. The complexity became overwhelming, and it became evident that meeting the desired standards would be a considerable challenge given the time limitations incurred during my academic pursuits.
 So, I have put together this simple recipe blog that's all about easy vibes and good food. Picture a laid-back design splashed with colors and mouth-watering images, urging the user to get outdoors and whip up some tasty dishes! If you're feeling chatty, you can sign up to drop comments and likes on your favorite recipes. 
 And for the behind-the-scenes magic, I have hooked up the admin side. Admins can create, read, update, delete posts and comments, also known as (CRUD). It's like a backstage pass to keep things in check.
