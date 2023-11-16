@@ -104,7 +104,9 @@ I explored font options for this web design on the [Google Fonts](https://fonts.
 
 ## Icons
 <img width="386" alt="footer" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/b181bc8f-b843-49f1-9d92-64d83aac0585">
-The social media icons featured in the footer are sourced from the [Font Awesome](https://fontawesome.com/) website.
+
+The social media icons featured in the footer are sourced from the [Font Awesome](https://fontawesome.com/)
+website.
 
 
 ## Technologies Used
