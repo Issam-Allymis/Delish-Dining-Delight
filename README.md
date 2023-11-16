@@ -5,6 +5,39 @@ And for the behind-the-scenes magic, I have hooked up the admin side. Admins can
 The goal? Blend simplicity with eye candy and throw in some interactive flair. The result? A cozy corner where you're not just scrolling through recipes, but diving into the conversation and sharing your foodie delicious thoughts.
 
 ## UX
+
+### User Stories
+**New User:**
+* Sign Up: As a new user, I want to sign up to access exclusive features.
+
+**Existing User**
+* Sign In: As an existing user, I want to sign in to save and share my favorite recipes.
+* Reset Password: As an existing user, I want to reset my password if I forget it.
+* Homepage Navigation: As a user, I want to easily navigate the homepage to discover new recipes.
+* View Recipe Reviews: As a user, I want to view reviews from others on a recipe.
+* Leave Recipe Reviews: As a user, I want to leave reviews on recipes I've tried.
+* Like/comment Recipes: As a user, I want to like/comment on recipes to show appreciation.
+* Comment Confirmation: As a user, I want to receive a notification popup confirming the submission of my comment.
+
+**Site Admin**
+* View All Recipes: As a site admin, I want to view all recipes to monitor the variety of content.
+* Review Recipe Submissions: As a site admin, I want to review and approve submitted recipes before they are published.
+* Remove Inappropriate Content: As a site admin, I want to remove recipes that violate community guidelines.
+* Recommend Featured Recipes: As a site admin, I want to feature certain recipes on the homepage for increased visibility.
+
+**Future Features** 
+* Remove Recipes: As a user, I want to remove recipes from my saved list.
+* Submit Recipe: As a user, I want to submit my own recipes to share with the community. 
+* Save Recipes: As a user, I want to save recipes to my profile for quick access.
+* Remove Recipes: As a user, I want to remove recipes from my saved list.
+* Submit Recipe: As a user, I want to submit my own recipes to share with the community.
+* Recipe Rating: As a user, I want to rate recipes to help others find the best ones.
+* Recipe Recommendations: As a user, I want to receive personalized recipe recommendations based on my preferences.
+* Styled Email Notifications: As a user, I want email notifications about recipe updates to be visually appealing.
+* Update Recipe: As a user, I want to update my submitted recipes.
+* Delete Recipe: As a user, I want to delete my submitted recipes. 
+
+
 ### Site Goals
 * This blog is crafted with a visually pleasing and informative design that is intuitive and easy to navigate
 * This blog allows users to easily sign in, enabling them to like/unlike and comment on each recipe.
@@ -32,6 +65,24 @@ The tasks during the development of this project were closely aligned with Code 
 ## Visual Design
 ### Wireframes
 I utilised [Canva](https://www.canva.com/) to craft the initial wireframes, outlining the intended appearance and structure of the blog. However, as the development progressed, I made the decision to omit certain features that were initially planned.
+### Home Page Desktop
+![WhatsApp Image 2023-11-14 at 14 55 04 (5)](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/fc67555c-3c53-42b7-94e3-918127ba647d)
+
+### Home Page Mobile
+![WhatsApp Image 2023-11-14 at 14 55 04 (4)](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/0117e1a5-39e0-4eb6-a628-854e537ce50f)
+
+### Form Desktop
+![WhatsApp Image 2023-11-14 at 14 55 04 (3)](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/f9f95ae7-53b6-47ce-b3ce-3e91070c9ae0)
+
+### Form Mobile
+![WhatsApp Image 2023-11-14 at 14 55 04 (2)](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/2e2ec2e2-663d-4d1e-9ffa-e7f5685163ce)
+
+### About Us Desktop
+![WhatsApp Image 2023-11-14 at 14 55 04 (1)](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/0eddbf68-c731-4f99-8d8d-395707164e4a)
+
+### Abous Us Mobile
+![WhatsApp Image 2023-11-14 at 14 55 04](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c8c6c3a3-7e7b-41f3-9fe8-55026e07d16a)
+
 
 ## Technologies Used
 ### Languages
@@ -47,7 +98,4 @@ I utilised [Canva](https://www.canva.com/) to craft the initial wireframes, outl
 * **Google Fonts**: Incorporated for diverse font styles.
 * **Crispy Forms**: Utilized to enhance the visual appeal of the admin form/login interface.
 * **Font Awesome**: Applied for integrating appealing icons into the design.
-
-
-
 
