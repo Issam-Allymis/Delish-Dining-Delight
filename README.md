@@ -108,6 +108,56 @@ I explored font options for this web design on the [Google Fonts](https://fonts.
 The social media icons featured in the footer are sourced from the [Font Awesome](https://fontawesome.com/)
 website.
 
+## Features
+### Page Elements
+**Navigation bar**
+<img width="898" alt="nav-bar" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/43f69f26-28f4-478c-b975-02a824d98193">
+
+The navigation bar is consistently positioned at the top of each page. I incorporated the "fixed-top" attribute with Bootstrap to ensure the bar remains fixed at the top, providing users with convenient navigation, even as they scroll down.
+
+<img width="404" alt="mobile nav" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/9c4e2256-8a97-4668-a455-307e6f8ae4cc">
+
+This is the mobile navigation bar, featuring a simple design. I've implemented a collapsible hamburger menu for enhanced user mobility.
+
+**The Home Page**
+![home page](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/03486cfe-5723-44bf-83f7-b035faffbe27)
+
+![home page b](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/4c5102f6-74e8-45e5-93f0-5a2f3d037414)
+
+The homepage offers a concise overview of the blog's content, providing a header detailing what to expect within the webpage, followed by a list of recipes complemented by captivating images that will activate the taste buds.
+
+**About Page**
+
+![about page](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/04abc782-c7ff-481b-aea2-ef4fac52d298)
+The About page at DelishDiningDelight warmly invites you to explore the world of perfect steak and other recipes, promising the user a delightful experience that will leave you with a satisfied smile. 
+
+**Footer**
+
+<img width="386" alt="footer" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c91cd2cd-023f-40b1-83dc-0b7a17e62785">
+
+The footer hosts all the social media links, fostering a closer connection within the community. I've implemented a subtle hover effect that glows and emulates a floating effect.
+
+**Logout Page**
+![logout](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/20a7ab79-5930-409d-bfa9-e1e47f78764f)
+
+The Logout page offers users the option to securely log out from their account. It includes a confirmation question and a button to proceed with the logout. Upon confirmation, users are redirected to the landing page, where a brief alert notifies them of a successful logout.
+
+**Sign In Page**
+![sign in](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/3ad60b8b-3e9f-4a65-9e95-218073a9b123)
+
+The Sign In page features a user-friendly form for account access, facilitating likes and comments on posts. Upon successful login, a brief alert confirms the user's login status.
+
+**Sign Up Page**
+<img width="919" alt="signup" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/fdde1e68-8dd6-463e-9258-81f29b4db060">
+
+The Sign-Up page offers users a straightforward form to register, enabling them to engage with the blogs on the page.
+
+## Comment Form
+**comment and like section**
+
+<img width="919" alt="comment" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/bd142b6a-239e-4951-b450-c807791b947b">
+
+Located at the bottom of the post Detail page, this section enables users to share their thoughts by leaving comments on individual posts. A notification popup assures users that their comments will undergo validation before being published.
 
 ## Technologies Used
 ### Languages
