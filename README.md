@@ -174,3 +174,7 @@ Located at the bottom of the post Detail page, this section enables users to sha
 * **Crispy Forms**: Utilized to enhance the visual appeal of the admin form/login interface.
 * **Font Awesome**: Applied for integrating appealing icons into the design.
 
+
+# Disclaimer
+***The DelishDiningDelight Project Was Created Only For Educational Purposes.***
+
