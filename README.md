@@ -209,20 +209,24 @@ Located at the bottom of the post Detail page, this section enables users to sha
 
 ## Agile Tool
 **GitHub Projects:**
+
 [GitHub Projects](https://github.com/Code-Institute-Solutions/django-blog-starter-files/projects?query=is%3Aopen) served as an agile tool for this project. 
 
 **GitHub Issues**
+
 [GitHub Issues](https://github.com/Code-Institute-Solutions/django-blog-starter-files/issues) served as another Agile tool for this project. Here, I employed my own user story template and bug template to keep track of my progress in the website development process.
 
 ## Deployment
 
 **Cloudinary**
+
 This project utilizes [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary) to store media files online. To integrate it into your own project, follow the steps below:
 
 Sign up with GitHub or create an account.
 From the Dashboard, locate the "API Environment variable." This information will be incorporated into our project.
 
 **Heroku**
+
 This project is deployed on [Heroku](https://www.heroku.com/), and the deployment steps are outlined below:
 
 * On the right, click on "New."
@@ -240,6 +244,7 @@ This project is deployed on [Heroku](https://www.heroku.com/), and the deploymen
 
 
 ***Heroku Deployment Instructions***
+
 To ensure a successful deployment on Heroku, two essential files are required.
 
 1. requirements.txt
@@ -251,14 +256,16 @@ Update your requirements.txt file whenever you add a new package to your project
 In the Procfile, replace "app_name" with your project's name and insert the following code:
 
 web: gunicorn app_name.wsgi
-Deploying on Heroku
+
+**Deploying on Heroku**
+
 Follow these steps to deploy your project on Heroku:
 
-Click on your app and navigate to the "Deploy" tab.
-Connect your project through the "Deployment Method."
-Scroll down and choose either "Automatic deploys" or "Manual Deploy."
-Wait for deployment and open your deployed app!
-Follow These instructions to ensure a smooth deployment process on Heroku.
+* Click on your app and navigate to the "Deploy" tab.
+* Connect your project through the "Deployment Method."
+* Scroll down and choose either "Automatic deploys" or "Manual Deploy."
+* Wait for deployment and open your deployed app!
+* Follow These instructions to ensure a smooth deployment process on Heroku.
 
 # Disclaimer
 ***The DelishDiningDelight Project Was Created Only For Educational Purposes.***
