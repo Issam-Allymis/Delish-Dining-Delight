@@ -267,6 +267,43 @@ Follow these steps to deploy your project on Heroku:
 * Wait for deployment and open your deployed app!
 * Follow These instructions to ensure a smooth deployment process on Heroku.
 
+**Deploying on GitHub**
+
+* Ensure you have a GitHub account.
+* Navigate to GitHub and log in.
+  
+**Access the Repository:**
+
+* Go to the GitHub repository you want to clone.
+
+**Copy the Repository Link:**
+
+* Click on the "Code" button in the repository.
+* Copy the HTTPS link provided.
+
+**Clone the Repository:**
+
+* Open your terminal or command prompt.
+
+**Use the following command to clone the repository:**
+
+* git clone [paste_the_copied_link_here]
+* Press Enter.
+
+**Access the Project:**
+
+* Navigate to the cloned repository using the cd command
+
+* cd repository_name
+
+**Ready to Work:**
+
+Now, you have everything you need to start working on the project.
+
+You've successfully cloned the GitHub repository.
+
+Happy coding! 
+
 # Disclaimer
 ***The DelishDiningDelight Project Was Created Only For Educational Purposes.***
 
