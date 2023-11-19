@@ -195,6 +195,17 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ||status|IntegerField|
 ||likes|ManyToManyField|
 
+* Comment
+
+|**PK**|**ID**|**Type**|
+|---|---|---|
+||post|ForeignKey|
+||name|Charfield|
+||email|EmailField|
+||body|TextField|
+||created_on|DateTimeField|
+||approved|BooleanField|
+
 
 # Disclaimer
 ***The DelishDiningDelight Project Was Created Only For Educational Purposes.***
