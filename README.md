@@ -179,9 +179,10 @@ Located at the bottom of the post Detail page, this section enables users to sha
 * **[PostgreSQL](https://www.solarwinds.com/database-insights-sql-server?CMP=KNC-TAD-BNG-SW_UKI_X_PP_CPC_LD_EN_PRODB_TIN-XDB&361868327~1174279389784930_o_c_postgresql-p~~~p72708223620&s_kwcid=AL!11508!3!!p!!o!!postgresql&ds_cid=71700000098795352&ds_agid=58700007962410432&network=o&device=c&keyword=postgresql&matchtype=p&creative=&feeditemid=&&msclkid=cfe3da19899b17fd4067bf43f278ca17&gclid=cfe3da19899b17fd4067bf43f278ca17&gclsrc=3p.ds)** - used as the relational database management.
 * **[ElephantSQL](https://www.elephantsql.com/docs/index.html)** - used as the Postgres database.
 * **[Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)** - used for online static file storage.
+*  **[ImageResizer](https://imageresizer.com/)**
 
 ## Models
-* Post
+* Post Model
   
 |**PK**|**ID**|**Type**|
 |---|---|---|
@@ -195,7 +196,7 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ||status|IntegerField|
 ||likes|ManyToManyField|
 
-* Comment
+* Comment Model
 
 |**PK**|**ID**|**Type**|
 |---|---|---|
@@ -206,6 +207,58 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ||created_on|DateTimeField|
 ||approved|BooleanField|
 
+## Agile Tool
+**GitHub Projects:**
+[GitHub Projects](https://github.com/Code-Institute-Solutions/django-blog-starter-files/projects?query=is%3Aopen) served as an agile tool for this project. 
+
+**GitHub Issues**
+[GitHub Issues](https://github.com/Code-Institute-Solutions/django-blog-starter-files/issues) served as another Agile tool for this project. Here, I employed my own user story template and bug template to keep track of my progress in the website development process.
+
+## Deployment
+
+**Cloudinary**
+This project utilizes [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary) to store media files online. To integrate it into your own project, follow the steps below:
+
+Sign up with GitHub or create an account.
+From the Dashboard, locate the "API Environment variable." This information will be incorporated into our project.
+
+**Heroku**
+This project is deployed on [Heroku](https://www.heroku.com/), and the deployment steps are outlined below:
+
+* On the right, click on "New."
+* From the dropdown, select "Create New App."
+* Input a unique name for your app (choose wisely, as the app name must be unique).
+* Choose a region and then click on "Create App."
+* In the app settings, click on "Reveal Config Vars" and set your environment variables.
+
+
+  |**Key**|**Value**|
+  |---|---|
+  |SECRET_KEY|Any random secret key|
+  |CLOUDINARY_URL|Cloudinary API key here|
+  |DATABASE_URL|ElephantSQL database URL here|
+
+
+***Heroku Deployment Instructions***
+To ensure a successful deployment on Heroku, two essential files are required.
+
+1. requirements.txt
+Update your requirements.txt file whenever you add a new package to your project. Run the following command:
+
+*pip3 freeze --local > requirements.txt*
+
+2. Procfile
+In the Procfile, replace "app_name" with your project's name and insert the following code:
+
+web: gunicorn app_name.wsgi
+Deploying on Heroku
+Follow these steps to deploy your project on Heroku:
+
+Click on your app and navigate to the "Deploy" tab.
+Connect your project through the "Deployment Method."
+Scroll down and choose either "Automatic deploys" or "Manual Deploy."
+Wait for deployment and open your deployed app!
+Follow These instructions to ensure a smooth deployment process on Heroku.
 
 # Disclaimer
 ***The DelishDiningDelight Project Was Created Only For Educational Purposes.***
