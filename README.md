@@ -33,6 +33,8 @@ The goal? Blend simplicity with eye candy and throw in some interactive flair. T
 * Submit Recipe: As a user, I want to submit my own recipes to share with the community. 
 * Save Recipes: As a user, I want to save recipes to my profile for quick access.
 * Remove Recipes: As a user, I want to remove recipes from my saved list.
+* Change Password: As a user, I want to be able to change my password.
+* Star Rating: As a user, I want to be able to give a start rating from 1-5.
 * Submit Recipe: As a user, I want to submit my own recipes to share with the community.
 * Recipe Rating: As a user, I want to rate recipes to help others find the best ones.
 * Recipe Recommendations: As a user, I want to receive personalized recipe recommendations based on my preferences.
@@ -143,7 +145,7 @@ The footer hosts all the social media links, fostering a closer connection withi
 The Logout page offers users the option to securely log out from their account. It includes a confirmation question and a button to proceed with the logout. Upon confirmation, users are redirected to the landing page, where a brief alert notifies them of a successful logout.
 
 **Sign In Page**
-![sign in](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/3ad60b8b-3e9f-4a65-9e95-218073a9b123)
+![signin](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/db5751cc-89b8-4dbf-b1fd-82015e461a51)
 
 The Sign In page features a user-friendly form for account access, facilitating likes and comments on posts. Upon successful login, a brief alert confirms the user's login status.
 
@@ -161,18 +163,37 @@ Located at the bottom of the post Detail page, this section enables users to sha
 
 ## Technologies Used
 ### Languages
-* **HTML**: Responsible for page markup.
-* **CSS**: Utilized for styling purposes.
-* **Python**: Implemented to develop Django functionality, including building models, forms, and views for the app.
-* **JavaScript**: Applied for automatic disappearance of alerts.
+* **[HTML](https://en.wikipedia.org/wiki/HTML)**: Responsible for page markup.
+* **[CSS](https://en.wikipedia.org/wiki/CSS)**: Utilized for styling purposes.
+* **[Python](https://en.wikipedia.org/wiki/Python_(programming_language))**: Implemented to develop Django functionality, including building models, forms, and views for the app.
+* **[JavaScript](https://en.wikipedia.org/wiki/JavaScript)**: Applied for automatic disappearance of alerts.
 
 ### Framework, Libraries & Programs
-* **Django**: Employed for constructing the app's models, forms, and views.
-* **Bootstrap**: Utilized to ensure the site's responsiveness.
-* **Summernote**: Implemented to empower the admin with the ability to add styling while creating a new blog post.
-* **Google Fonts**: Incorporated for diverse font styles.
-* **Crispy Forms**: Utilized to enhance the visual appeal of the admin form/login interface.
-* **Font Awesome**: Applied for integrating appealing icons into the design.
+* **[Django](https://en.wikipedia.org/wiki/Django_(web_framework))**: Employed for constructing the app's models, forms, and views.
+* **[Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29)**: Utilized to ensure the site's responsiveness.
+* **[Summernote](https://summernote.org/)**: Implemented to empower the admin with the ability to add styling while creating a new blog post.
+* **[Google Fonts](https://fonts.google.com/)**: Incorporated for diverse font styles.
+* **[Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)**: Utilized to enhance the visual appeal of the admin form/login interface.
+* **[Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome)**: Applied for integrating appealing icons into the design.
+* **[Canva](https://en.wikipedia.org/wiki/Canva)**: Used to create and design my wireframes.
+* **[PostgreSQL](https://www.solarwinds.com/database-insights-sql-server?CMP=KNC-TAD-BNG-SW_UKI_X_PP_CPC_LD_EN_PRODB_TIN-XDB&361868327~1174279389784930_o_c_postgresql-p~~~p72708223620&s_kwcid=AL!11508!3!!p!!o!!postgresql&ds_cid=71700000098795352&ds_agid=58700007962410432&network=o&device=c&keyword=postgresql&matchtype=p&creative=&feeditemid=&&msclkid=cfe3da19899b17fd4067bf43f278ca17&gclid=cfe3da19899b17fd4067bf43f278ca17&gclsrc=3p.ds)** - used as the relational database management.
+* **[ElephantSQL](https://www.elephantsql.com/docs/index.html)** - used as the Postgres database.
+* **[Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)** - used for online static file storage.
+
+## Models
+* Post
+  
+|**PK**|**ID**|**Type**|
+|---|---|---|
+|FK|author|OneToMany|
+||title|Charfield|
+||slug|SlugField|
+||content|TextField|
+||featured_image|CloudinaryField|
+||excerpt|TextField|
+||created_on|DateTimeField|
+||status|IntegerField|
+||likes|ManyToManyField|
 
 
 # Disclaimer
