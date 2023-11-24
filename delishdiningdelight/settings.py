@@ -43,8 +43,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
-    '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu106.gitpod.io',
-    '127.0.0.1'
+    '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu106.gitpod.io'
     ]
 
 # To prevent 500 errors during login and registrarion
