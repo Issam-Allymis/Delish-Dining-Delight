@@ -18,26 +18,12 @@
             <div class="d-none d-md-block col-md-8 masthead-image">
                 <!-- The featured images go in a row of three columns -->
                 <div class="row">
-                    <div class="col-md-4">
                         <!-- The featured image URL goes in the src attribute -->
-                        {% if "placeholder" in post.featured_image.url %}
-                            <img src="../static/images/Amazing-Steak.jpg" class="img-fluid" alt="Image 1">
-                        {% else %}
-                            <img src="../static/images/flavoring-steak.jpg" class="img-fluid" alt="Image 1">
-                        {% endif %}
-                    </div>
                     <div class="col-md-4">
                         {% if "placeholder" in post.featured_image.url %}
                             <img src="../static/images/aed-steak.webp" class="img-fluid" alt="Image 2">
                         {% else %}
-                            <img src="../static/images/chops.jpeg" class="img-fluid" alt="Image 2">
-                        {% endif %}
-                    </div>
-                    <div class="col-md-4">
-                        {% if "placeholder" in post.featured_image.url %}
-                            <img src="../static/images/it.cat_steak.png" class="img-fluid" alt="Image 3">
-                        {% else %}
-                            <img src="../static/images/another-image.jpg" class="img-fluid" alt="Image 3">
+                            <img src="{{ post.featured_image.url }}" class="img-fluid" alt="Image 2">
                         {% endif %}
                     </div>
                 </div>
@@ -95,7 +81,7 @@
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <h3>Comments</h3>
             <div class="card-body">
                 <!-- We want a for loop inside the tags to iterate through each comment in comments -->
                 {% for comment in comments %}

@@ -225,10 +225,28 @@ p {
     color: #FFFDE7!important;
 }
 
+.page-link {
+    border-radius: 15%;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    margin-top: 10px;
+}
+
+
 /* Width Adjustments  */
 
 .image-container  { 
     height: auto;
+}
+
+.card-img, .card-img-top {
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 50%;
+}
+
+.img-fluid {
+    border-radius: 50%;
 }
 
 *, ::after, ::before {
@@ -237,7 +255,7 @@ p {
 
 label {
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
 }
 
 .custom-container {
@@ -269,11 +287,13 @@ label {
     padding: 15px;
     width: auto;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
-    background-color: #434141;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px grey;
-    border: 1px solid darkgrey;
-    }
+}
+
+.mb-4 {
+    border: none;
+}
 
 
 /*....................... Index Page  */
@@ -284,9 +304,6 @@ label {
     border: 1px solid darkgrey;
 }
 
-.card-img, .card-img-top {
-    border-radius: 20%;
-}
 
 /* ....................About page */
 
@@ -298,13 +315,11 @@ label {
     border-radius: 20%;
     box-shadow: 10px 5px 5px grey;
     border: 1px solid darkgrey;
-    background-color: #434141;
-
 }
 
 body h1 {
-    margin-top: 10px;
-    color: #ccc;
+    margin-top: .5px;
+    color: #ffff;
 }
 
 .col {
@@ -324,7 +339,7 @@ body h1 {
 @media (min-width: 450px) {
     p {
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: .5px;
     }
 
     .page-header::before {

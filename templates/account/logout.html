@@ -7,10 +7,13 @@
 {% block content %}
 
   <div class="col-md-10">
-  <h1 class="d-flex justify-content-center align-items-center">{% trans "Sign Out" %}</h1>
-  <div class= "container d-flex justify-content-center align-items-center">
-  <p>{% trans 'Are you sure you want to sign out?' %}</p>
+      <h1 class="d-flex justify-content-center align-items-center">{% trans "Sign Out" %}</h1>
+    <div class= "container d-flex justify-content-center align-items-center">
+      <p>{% trans 'Are you sure you want to sign out?' %}</p>
+    </div>
+  
 
+<div class="container d-flex justify-content-center align-items-center">
   <form method="post" action="{% url 'account_logout' %}">
     {% csrf_token %}
     {% if redirect_field_value %}
@@ -20,5 +23,6 @@
   </form>
 </div>
 </div>
+
 
 {% endblock content %}
