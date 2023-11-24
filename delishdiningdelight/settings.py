@@ -27,13 +27,20 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+
 DEBUG = False
 
+
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
@@ -42,6 +49,7 @@ ALLOWED_HOSTS = [
     ]
 
 # To prevent 500 errors during login and registrarion
+
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
