@@ -181,6 +181,13 @@ Located at the bottom of the post Detail page, this section enables users to sha
 * **[Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)** - used for online static file storage.
 *  **[ImageResizer](https://imageresizer.com/)**
 
+## General testing
+### Methods
+- **HTML** has been validated through the [W3C HTML5 Validator](https://validator.w3.org/).
+- **CSS** has successfully passed validation using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+- I relied on [W3Schools](https://www.w3schools.com/) tutorials and references whenever I encountered challenges or required a refresher on specific elements or tags. In instances where I faced errors.
+- I got assistance from the [Stack Overflow](https://stackoverflow.com/) community for support and solutions.
+
 ## Models
 * Post Model
   
