@@ -13,9 +13,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import sys
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,9 +39,9 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
     '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu106.gitpod.io'
-    ]
+]
 
-# To prevent 500 errors during login and registrarion
+# To prevent 500 errors during login and registration
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
@@ -112,7 +114,6 @@ WSGI_APPLICATION = 'delishdiningdelight.wsgi.application'
 
 
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -120,11 +121,12 @@ DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
  }
 
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
-    'API_KEY': os.environ.get('API_KEY'),
-    'API_SECRET': os.environ.get('API_SECRET'),
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 
@@ -156,13 +158,15 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-STATIC_URL = 'static/'
+  
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
