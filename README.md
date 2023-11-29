@@ -89,15 +89,15 @@ I utilised [Canva](https://www.canva.com/) to craft the initial wireframes, outl
 ![WhatsApp Image 2023-11-14 at 14 55 04](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c8c6c3a3-7e7b-41f3-9fe8-55026e07d16a)
 
 ## Colours
-<img width="150" alt="colour" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/de4096c5-02de-4bec-96f4-f0ad3b3036c4">
+- <img width="150" alt="colour" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/de4096c5-02de-4bec-96f4-f0ad3b3036c4">
 
-<img width="62" alt="colour 2" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/b96eea47-a491-4242-9089-8c78514c6e22">
+- <img width="62" alt="colour 2" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/b96eea47-a491-4242-9089-8c78514c6e22">
 
-<img width="47" alt="colour 1" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c6209b92-3c33-4e4d-b16d-a6da631a0964">
+- <img width="47" alt="colour 1" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c6209b92-3c33-4e4d-b16d-a6da631a0964">
 
-<img width="49" alt="colour 3" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/75f0fb7b-27bf-481d-9d1f-25bd194dad60">
+- <img width="49" alt="colour 3" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/75f0fb7b-27bf-481d-9d1f-25bd194dad60">
 
-<img width="67" alt="colour 4" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/ed3348d4-cfc3-441b-a921-539aa1a486b6">
+- <img width="67" alt="colour 4" src="https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/ed3348d4-cfc3-441b-a921-539aa1a486b6">
 
 I selected black, red, and grey for their eye-friendly appeal, and the straightforward, laid-back aesthetic significantly enhances the prominence of the images.
 
