@@ -19,7 +19,7 @@
                 <!-- The featured images go in a row of three columns -->
                 <div class="row">
                         <!-- The featured image URL goes in the src attribute -->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         {% if "placeholder" in post.featured_image.url %}
                             <img src="../static/images/aed-steak.webp" class="img-fluid" alt="Image 2">
                         {% else %}
@@ -127,5 +127,21 @@
         </div>
     </div>
 </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <a href="{% url 'contact' %}" class="btn btn-primary" style="width: 200px;">Place Order</a>
+            </div>
+        </div>
+
+        <div class="row bm">
+            <div class="col-md-8">
+                <div class="col text-center">
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary" style="width: 200px;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}

@@ -17,6 +17,8 @@ import sys
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
+from dotenv import load_dotenv
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +30,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'SECRET_KEY'
+
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -38,12 +41,14 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
-    '8000-issamallymi-delishdinin-43rrtulqzry.ws-eu106.gitpod.io'
+    '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu108.gitpod.io',
+    '127.0.0.1'
 ]
 
 # To prevent 500 errors during login and registration
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 # Application definition
 
@@ -64,7 +69,22 @@ INSTALLED_APPS = [
     'crispy_forms',
     'about',
     'blog',
+    'contact',
 ]
+
+
+"""EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '3b40fb19e594cf'
+EMAIL_HOST_PASSWORD = 'dc504b33c84cd6'
+EMAIL_PORT = '2525'"""
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.zoho.eu'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') 
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
 SITE_ID = 1
 
@@ -117,17 +137,29 @@ WSGI_APPLICATION = 'delishdiningdelight.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
- }
+load_dotenv()
 
+DATABASE_URL = "postgres://viqiccuc:QA-_ufFJ8O_dksxBlTJZCfJGSbf_33gH@flora.db.elephantsql.com/viqiccuc"
+
+DATABASES = {
+    'default': dj_database_url.parse(DATABASE_URL)
+}
+# If running tests, use SQLite database
 if 'test' in sys.argv:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'CLOUD_NAME',
+    'API_SECRET': 'API_SECRET',
+    'API_KEY': 'API_KEY',
 }
+
 
 
 # Password validation
@@ -179,3 +211,4 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

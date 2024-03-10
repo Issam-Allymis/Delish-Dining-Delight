@@ -4,6 +4,7 @@ body {
     color: #fde0e0; /* text color */
     font-family: 'Roboto', sans-serif; 
     font-family: 'Lora', serif;
+    margin: 0;
 }
 
 /* ------------------------------------Style the navigation bar */
@@ -13,7 +14,7 @@ body {
 }
   
 .navbar-brand {
-    font-weight: 700; /* Make the brand text bold */
+    font-weight: 700; 
 }
 
 .navbar-light .navbar-brand {
@@ -21,7 +22,7 @@ body {
 }
   
 .navbar-text {
-    font-size: 14px; /* Adjust the text size */
+    font-size: 14px; 
     color: #888; /* Set a muted text color */
 }
   
@@ -63,7 +64,7 @@ body {
     content: "";
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    margin-top: 17px;
+    margin-top: 11px;
     top: 60px;
     left: 0;
     width: 100%;
@@ -99,9 +100,12 @@ body {
   /*-----------------------------------Style the footer */
 .footer {
     background-color: #363636; /* Set the footer background color */
-    color: #fff; /* Set the footer text color */
+    color: #fff; /*  Set the footer text color */
     padding: 15px 0; 
-    text-align: center; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    width: 100%;
 }
   
 .footer i {
@@ -109,6 +113,11 @@ body {
     margin: 0 10px; 
     box-shadow: 5px 5px 5px #000000;
     transition: 0.6s ease;
+}
+
+.btn-signin {
+    display: block; 
+    margin: 0 auto; 
 }
 
 .btn-signup {
@@ -132,6 +141,7 @@ body {
     color: #ccc;
     background-color: #363636;
 }
+
 .btn:hover {
     color: #ccc;
     background-color: #000000;
@@ -151,7 +161,9 @@ body {
 .btn-primary:hover {
     border-color: #000000;
 }
-  
+
+
+
 .fa-facebook-square {
     color: #1877f2; /* Set Facebook color */
 }
@@ -190,6 +202,21 @@ body {
     color: #cd0000; /* Set YouTube color */
 }
 
+/*.......................... Signin & Signup*/
+
+.custom-container {
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: auto; /* Adjust width as needed */
+}
+
+#id_password {
+    margin-bottom: 10px; 
+}
+
+input[type="checkbox" i] {
+    display: none
+}
 
 /* .........................Alerts */
 .alert-margin {
@@ -233,8 +260,11 @@ p {
     margin-top: 10px;
 }
 
+.bm {   /* Boreder Margin for button in post detail file */
+    margin-left: 10px;
+}
 
-/* Width Adjustments  */
+/*............................Width Adjustments */
 
 .image-container  { 
     height: auto;
@@ -254,7 +284,7 @@ p {
 }
 
 label {
-    display: inline-block;
+    display: none;
     color: #000000;
 }
 
@@ -284,11 +314,32 @@ label {
 }
 
 .col-md-10 {
+    justify-content: center; /* Horizontally center-align the content */
+    align-items: center; /* Vertically center-align the content */
     padding: 15px;
     width: auto;
     color: rgb(255, 255, 255);
     border-radius: 5%;
     box-shadow: 10px 5px 5px grey;
+}
+
+.col-md-10 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-container {
+    background-color: #000000; 
+    border-radius: 10px; 
+    padding: 20px; /* Add padding to create space around the content */
 }
 
 .mb-4 {
@@ -301,7 +352,6 @@ label {
 .div-post {
     border-radius: 10%;
     box-shadow: 10px 5px 5px grey;
-    border: 1px solid darkgrey;
 }
 
 
@@ -327,12 +377,73 @@ body h1 {
     border-radius: 50px;
 }
 
+/* ....................Contact page */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+/*................................. Signup */
+
+.signup p {
+    margin-bottom: 10px; 
+}
+
+/*.......................................Modal Content/Box */
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set the width of the modal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {      /* Close Button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.success {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    transform: translateY(200px);
+}
+
+.contact-container {
+    padding: 0 40px; 
+}
+
 
 /*............@Media query*/
 
 @media (min-width: 768px){
 .col-md-6 {
     margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .col-md-4 {
+        width: 100%;
+    }
+    .textarea-column {
+        margin-top: 20px;
     }
 }
 

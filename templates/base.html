@@ -1,8 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100">
-
+<html class="h-100"><!---->
 <head>
     <title>Delish Dining Delight</title>
 
@@ -13,12 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/dbpqfq5oq/raw/upload/v1701254219/static/css/style.16bf527fde4f_rdy9xg.css">
+    <link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/dbpqfq5oq/raw/upload/v1701254219/static/css/style.16bf527fde4f_rdy9xg.css"> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dbpqfq5oq/image/upload/v1700919996/static/css/favicon_khl23g.png">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dbpqfq5oq/image/upload/v1700919996/static/css/favicon_khl23g.png"> 
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -44,6 +43,10 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
                          href="{% url 'about' %}">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
+                         href="{% url 'contact' %}">Contact</a>
                       </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -95,7 +98,7 @@
         </div>
       </div>
 
-    <main class="flex-shrink-0 main-bg">
+    <main class="flex-shrink-0 main-bg"><!--flex-grow-1-->
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
@@ -120,3 +123,5 @@
 </body>
 
 </html>
+
+<script src="https://kit.fontawesome.com/05eb16187e.js" crossorigin="anonymous"></script>
