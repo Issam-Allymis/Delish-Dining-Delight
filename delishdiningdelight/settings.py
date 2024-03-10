@@ -73,11 +73,6 @@ INSTALLED_APPS = [
 ]
 
 
-"""EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = '3b40fb19e594cf'
-EMAIL_HOST_PASSWORD = 'dc504b33c84cd6'
-EMAIL_PORT = '2525'"""
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.zoho.eu'
