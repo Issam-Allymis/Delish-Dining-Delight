@@ -15,10 +15,11 @@ import os
 import dj_database_url
 import sys
 from django.contrib.messages import constants as messages
-if os.path.isfile('env.py'):
-    import env
-from dotenv import load_dotenv
+from decouple import config
 
+if os.path.isfile('.env'):
+    from dotenv import load_dotenv
+    load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,7 +32,6 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'SECRET_KEY'
-
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -150,9 +150,9 @@ if 'test' in sys.argv:
 
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'CLOUD_NAME',
-    'API_SECRET': 'API_SECRET',
-    'API_KEY': 'API_KEY',
+    'CLOUD_NAME': config('CLOUD_NAME'),
+    'API_SECRET': config('API_SECRET'),
+    'API_KEY': config('API_KEY'),
 }
 
 
