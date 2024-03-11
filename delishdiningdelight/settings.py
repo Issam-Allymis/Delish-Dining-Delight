@@ -17,9 +17,7 @@ import sys
 from django.contrib.messages import constants as messages
 from decouple import config
 
-if os.path.isfile('.env'):
-    from dotenv import load_dotenv
-    load_dotenv()
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
