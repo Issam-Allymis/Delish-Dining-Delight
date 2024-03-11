@@ -81,12 +81,12 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
-# POP3 settings for receiving emails
+"""# POP3 settings for receiving emails
 POP3_HOST = 'poppro.zoho.eu'
 POP3_PORT = 995
 POP3_USE_SSL = True
 POP3_USERNAME = config('EMAIL_HOST_USER')
-POP3_PASSWORD = config('EMAIL_HOST_PASSWORD')
+POP3_PASSWORD = config('EMAIL_HOST_PASSWORD')"""
 
 SITE_ID = 1
 
