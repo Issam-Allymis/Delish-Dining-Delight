@@ -18,6 +18,7 @@ from django.contrib.messages import constants as messages
 from decouple import config
 
 from dotenv import load_dotenv
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -72,12 +73,20 @@ INSTALLED_APPS = [
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.zoho.eu'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') 
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+EMAIL_PORT = 465
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+
+# POP3 settings for receiving emails
+POP3_HOST = 'poppro.zoho.eu'
+POP3_PORT = 995
+POP3_USE_SSL = True
+POP3_USERNAME = config('EMAIL_HOST_USER')
+POP3_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 SITE_ID = 1
 
@@ -130,7 +139,6 @@ WSGI_APPLICATION = 'delishdiningdelight.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-load_dotenv()
 
 DATABASE_URL = "postgres://viqiccuc:QA-_ufFJ8O_dksxBlTJZCfJGSbf_33gH@flora.db.elephantsql.com/viqiccuc"
 
