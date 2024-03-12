@@ -1,5 +1,9 @@
 from django.shortcuts import render, redirect
-from . forms import CreateUserForm
+from . forms import CreateUserForm, SigninForm
+
+# - Authentication models and functions
+from django.contrib.auth.models import auth 
+from django.contrib.auth import authenticate, login, logout
 
 
 def register(request):
@@ -12,7 +16,7 @@ def register(request):
         if form.is_valid():
             form.save()
 
-            return redirect("account_login")
+            return redirect("my-login")
 
     
     context = {'registerform': form}
@@ -23,13 +27,26 @@ def register(request):
 
 
 
-
-
-
-
-
-
 def my_login(request):
+    
+    form = SigninForm()
 
-    return render(request, 'registration/my_login.html')
+    if request.method == "POST":
+        form = SigninForm(request, data=request.POST)
+
+        if form.is_valid():
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
+            user = authenticate(request, username=username, password=password)
+
+            if user is not None:
+                auth.login(request, user)
+
+                return redirect('home')
+
+    context = {'loginform': form}
+
+
+    return render(request, 'registration/my_login.html', context)
 
