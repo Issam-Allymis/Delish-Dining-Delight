@@ -34,4 +34,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.getElementById("signup_form").addEventListener("submit", function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Set the cookies with numerical values
+    document.cookie = "_ga=123456789; domain=.cloudinary.com; path=/";
+    document.cookie = "__cfruid=987654321; domain=.cloudinary.com; path=/";
+    document.cookie = "_cfuvid=555555555; domain=.cloudinary.com; path=/";
+    document.cookie = "cf_clearance=999999999; domain=.cloudinary.com; path=/";
+    document.cookie = "_ga_NKMQJY2D2H=111222333; domain=.cloudinary.com; path=/";
+    document.cookie = "_hp2_id.461121704=777888999; domain=.cloudinary.com; path=/";
+
+    // Submit the form
+    this.submit();
+});
+    </script>
+
 {% endblock content %}
