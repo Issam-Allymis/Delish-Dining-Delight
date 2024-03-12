@@ -155,11 +155,11 @@ if 'test' in sys.argv:
     }
 
 
-"""CLOUDINARY_STORAGE = {
+CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME'),
     'API_SECRET': config('API_SECRET'),
     'API_KEY': config('API_KEY'),
-}"""
+}
 
 
 
