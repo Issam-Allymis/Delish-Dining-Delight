@@ -23,11 +23,7 @@ class CreateUserForm(UserCreationForm):
 
 class SigninForm(AuthenticationForm):
 
-    username = forms.CharField(widget=TextInput())
-    password = forms.CharField(widget=PasswordInput())
-
-    
-
-
+    username = forms.CharField(widget=TextInput(attrs={'style': 'margin-bottom: 10px;'}))
+    password = forms.CharField(widget=PasswordInput(attrs={'style': 'margin-bottom: 10px;'}))
 
 

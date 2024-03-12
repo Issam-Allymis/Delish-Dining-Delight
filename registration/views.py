@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from . forms import CreateUserForm, SigninForm
 
+from django.contrib.auth.decorators import login_required # Imported decorator to protect our view
+
 # - Authentication models and functions
 from django.contrib.auth.models import auth 
 from django.contrib.auth import authenticate, login, logout
@@ -49,4 +51,11 @@ def my_login(request):
 
 
     return render(request, 'registration/my_login.html', context)
+
+
+
+@login_required(login_url='my-login')
+def dashboard(request):
+
+    return render(request, 'base.html')
 
