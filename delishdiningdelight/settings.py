@@ -40,6 +40,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
+    '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu109.gitpod.io',
     '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu108.gitpod.io',
     '127.0.0.1'
 ]
@@ -69,6 +70,7 @@ INSTALLED_APPS = [
     'about',
     'blog',
     'contact',
+    'registration',
 ]
 
 
