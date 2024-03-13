@@ -223,6 +223,20 @@ Located at the bottom of the post Detail page, this section enables users to sha
 
 [GitHub Issues](https://github.com/Code-Institute-Solutions/django-blog-starter-files/issues) served as another Agile tool for this project. Here, I employed my own user story template and bug template to keep track of my progress in the website development process.
 
+**Unresolved Bugs**
+
+
+![to lower case](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/3c6c2112-b572-45e8-a7b4-57d4392573fd) 
+
+![js error 2](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/54f8031c-5863-4f85-9321-7022643d4037)
+
+![js error](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/8e791d91-101c-4f4a-b8c3-74c0634290d9)
+
+
+On the Contact/Order page My intention with this JavaScript code was to filter out necessary items from the menu. However, after extensive attempts to make it work properly, I couldn't figure out how to get it to function correctly. 
+I attempted to use AI assistance but still couldn't find a solution. It either incorrectly classified each individual word as invalid or failed to detect the error altogether.
+
+
 ## Deployment
 
 **Cloudinary**
