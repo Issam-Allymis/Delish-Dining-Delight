@@ -52,9 +52,9 @@ body {
     background-color: #333; 
 }
   
-  /*-----------------------------------Style the page header */
+/*-----------------------------------Style the page header */
 .page-header {
-    background-image: url('https://res.cloudinary.com/dbpqfq5oq/image/upload/v1700832223/static/flavoring-steak.70bab7e58b46.jpg'); 
+    background-image: url('../images/flavoring-steak.jpg'); 
     background-size: cover; 
     text-align: center; 
     z-index: 1;
@@ -161,7 +161,6 @@ body {
 .btn-primary:hover {
     border-color: #000000;
 }
-
 
 
 .fa-facebook-square {

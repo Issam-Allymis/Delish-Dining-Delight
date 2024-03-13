@@ -36,12 +36,13 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+#X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
     '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu109.gitpod.io',
     '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu108.gitpod.io',
+    '8000-issamallymi-delishdinin-0dqh8jx4jhh.ws-eu110.gitpod.io',
     '127.0.0.1'
 ]
 
@@ -157,11 +158,11 @@ if 'test' in sys.argv:
     }
 
 
-"""CLOUDINARY_STORAGE = {
+CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME'),
     'API_SECRET': config('API_SECRET'),
     'API_KEY': config('API_KEY'),
-}"""
+}
 
 
 
