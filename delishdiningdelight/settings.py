@@ -36,7 +36,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     'delish-dining-delight-f4825f9e0fc7.herokuapp.com',
@@ -84,12 +84,6 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
-"""# POP3 settings for receiving emails
-POP3_HOST = 'poppro.zoho.eu'
-POP3_PORT = 995
-POP3_USE_SSL = True
-POP3_USERNAME = config('EMAIL_HOST_USER')
-POP3_PASSWORD = config('EMAIL_HOST_PASSWORD')"""
 
 SITE_ID = 1
 
@@ -156,14 +150,6 @@ if 'test' in sys.argv:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('CLOUD_NAME'),
-    'API_SECRET': config('API_SECRET'),
-    'API_KEY': config('API_KEY'),
-}
-
 
 
 # Password validation
