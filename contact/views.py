@@ -1,12 +1,16 @@
-from django.core.mail import send_mail
+"""
+Module containing views for the contact form functionality.
+"""
+
+from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, redirect
 from django.views import generic, View
 from django.template.loader import render_to_string 
-from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponseServerError
 from .forms import ContactForm
 
-class contact(View):
+
+class Contact(View):
     """
     Class based View to render contact Page
     """
@@ -62,7 +66,7 @@ class contact(View):
             return render(
                 request,
                 "contact.html",
-                {"form": form}  
+                {"form": form}
             )
 
 
@@ -70,8 +74,7 @@ def contact_success(request):
     """
     Display the success page with thank you message and order content
     """
-    
     return render(
-        request, 
-        'contact_success.html', 
-        )
+        request,
+        'contact_success.html',
+    )

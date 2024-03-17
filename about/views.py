@@ -1,6 +1,9 @@
+"""
+Module containing views for the about page functionality.
+"""
+
 from django.shortcuts import render
-from django.views import generic, View
-from .models import About
+from django.views import View
 
 
 class AboutPage(View):

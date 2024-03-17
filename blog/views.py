@@ -1,14 +1,17 @@
+"""
+Module containing views for the blog application.
+"""
+
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.core.mail import send_mail
-from django.http import HttpResponse
 from django.contrib import messages
 from .models import Post
 from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """View for displaying a list of posts."""
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
@@ -16,8 +19,15 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
+    """
+    View for handling post likes.
 
+    Handles POST requests.
+    """
     def get(self, request, slug, *args, **kwargs):
+        """
+        Handle POST requests to like/unlike a post.
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -38,6 +48,7 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
+        """Handle POST requests."""
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -71,7 +82,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-
+    """View for handling post likes."""
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 

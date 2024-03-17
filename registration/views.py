@@ -1,15 +1,23 @@
-from django.shortcuts import render, redirect
-from . forms import CreateUserForm, SigninForm
+"""
+Module containing views for user registration and authentication.
+"""
 
-from django.contrib.auth.decorators import login_required # Imported decorator to protect our view
+from django.shortcuts import render, redirect
+
+# Imported decorator to protect our view
+from django.contrib.auth.decorators import login_required
 
 # - Authentication models and functions
-from django.contrib.auth.models import auth 
+from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate, login, logout
+
+from . forms import CreateUserForm, SigninForm
 
 
 def register(request):
-
+    """
+    View function for user registration.
+    """
     form = CreateUserForm()
 
     if request.method == "POST":
@@ -20,17 +28,16 @@ def register(request):
 
             return redirect("my-login")
 
-    
     context = {'registerform': form}
 
 
     return render(request, 'registration/register.html', context)
 
 
-
-
 def my_login(request):
-    
+    """
+    View function for user login.
+    """
     form = SigninForm()
 
     if request.method == "POST":
@@ -49,13 +56,12 @@ def my_login(request):
 
     context = {'loginform': form}
 
-
     return render(request, 'registration/my_login.html', context)
-
 
 
 @login_required(login_url='my-login')
 def dashboard(request):
-
+    """
+    View function for user dashboard.
+    """
     return render(request, 'base.html')
-

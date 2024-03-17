@@ -26,7 +26,7 @@
                             </a>
                             <!-- Post details along with likes/comments -->
                             <p class="text-muted h6 mb-3">
-                                {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ post.total_comments }}
+                                {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }} <i class="far fa-comment"></i> {{ total_comments }}
                             </p>
                         </div>
                     </div>
@@ -37,23 +37,21 @@
                 {% endif %}
                 {% endfor %}
             </div>
-        </div>
-    
-        
-<div>
-    <!-- Page navigation that lets the user go to the next page to view more posts -->
-    {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Go back</a></li>
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> See More &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %}
-</div>
-{% endblock %}
+        </div>       
+    <div>
+        <!-- Page navigation that lets the user go to the next page to view more posts -->
+        {% if is_paginated %}
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Go back</a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> See More &raquo;</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+    {% endblock %}
 
