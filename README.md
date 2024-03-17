@@ -185,8 +185,145 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ### Methods
 - **HTML** has been validated through the [W3C HTML5 Validator](https://validator.w3.org/).
 - **CSS** has successfully passed validation using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+- **Pylint** has successfully provided me with PEP 8 coding standards to ensure code consistency and adherence to best practices.
+- **Pythonium** hasn't detected any errors in my code [Pythonium Linter](https://pythonium.net/linter).
 - I relied on [W3Schools](https://www.w3schools.com/) tutorials and references whenever I encountered challenges or required a refresher on specific elements or tags. In instances where I faced errors.
 - I got assistance from the [Stack Overflow](https://stackoverflow.com/) community for support and solutions.
+
+**Discretion:**
+
+![Picte21](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/350d1932-c4e4-4fb8-8d2d-91feadbe2491)
+- The errors displayed in this image are related to the Django syntax. non of the errors shown are HTML5 errors.
+
+#### **Post Detail Page**
+
+![Picre22](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/21d56289-6c6f-45d7-a0a0-f31d4855c403)
+
+- No errors found in the Post Detail page
+
+
+#### **Index Page**
+
+![Picre24](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/5c4f8f76-e6ea-422a-a018-4bd1f4057bc8)
+
+- No errors found in the Index page.
+
+#### **Base Page**
+
+![Picre25](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/a5a97204-5a21-466f-90a5-c7e63d4a0159)
+
+- No errors found in the Base page.
+
+#### **Contact Success Page**
+
+![contact sucess](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/1e8d1a03-3bed-4d41-b8d4-f2d533794372)
+
+- No errors found in the Contact Success Page.
+
+#### **Contact Page**
+
+![contact](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/6b1f85fb-7344-41df-aada-2412fdeb434d)
+
+- No errors found in the Contact Page.
+
+#### **About Page**
+
+![about page](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/5313b0ff-f57c-4887-9e68-4d0070967be2)
+
+- No errors found in the About Page.
+
+#### **Login Page**
+
+![my_login](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/f1cad1e8-7543-4489-b442-4ade1d9b6d26)
+
+- No errors found in the Login Page.
+
+#### **Register Page**
+
+![register](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/f1e5d947-5158-4083-9666-938656194d60)
+
+- No errors found in the Register Page.
+
+#### **Style CSS**
+
+![Picte26](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/c4fd878f-f1bf-421a-81a7-78534d116be4)
+
+- no errors found in the CSS file.
+
+#### **Pythonium**
+
+![Picte27](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/09e78f4b-dafc-4a5e-afa7-fb678e3934b4)
+
+- According to Pythonium no syntax errors were detected.
+
+#### **PyLint Tests**
+
+**Blog admin.py**
+
+![admin py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/1b6e98d8-3e0d-498a-962f-21937052a57e)
+
+**Blog models.py**
+
+![Pictu35](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/891b8448-b653-45cf-aacc-eff1c753e128)
+
+**Blog urls.py**
+
+![blog urls](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/250b7d31-b2a7-42f7-92ab-4f050c8644a9)
+
+**Blog views.py**
+
+![Picte33](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/fabefbd8-4c84-47d4-b258-846a57848348)
+
+**Blog Forms.py**
+
+![Picte31](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/024c6310-b8c9-4943-87b6-decf0d99719a)
+
+
+**Registration forms.py**
+
+![forms py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/0a95e872-2531-4710-8ed3-2e93949f0a69)
+
+**Registration views**
+
+![registration vies py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/7ef6ab1c-e146-4bf7-a58a-6b4f57770c41)
+
+**Registration urls.py**
+
+![Picre29](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/16e8190e-7458-405c-9c0f-e890c216861c)
+
+**Contact forms.py**
+
+![contact py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/691bb07f-27ae-4265-84d7-9f359cf8a7a9)
+
+**Contact models.py**
+
+![contact models py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/7e100728-8655-456d-a8e6-0b56dfc5d897)
+
+**Contact urls.py**
+
+![contact urls py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/32d9a48e-a4f6-4afc-a1be-8d81510c456b)
+
+**Contact views.py**
+
+![contact views py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/e1ae696c-a5cd-4432-a976-801e58025f43)
+
+**About views.py**
+
+![about, views py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/86d2df97-b782-49bb-9bd4-bfaa4243585d)
+
+**About urls.py**
+
+![about urls py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/4a280507-4ced-4de1-a5d2-ef3ab6cd9e85)
+
+**About models.py**
+
+![about models py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/99d7a6c4-1028-4cf7-8755-53a92fbe4790)
+
+**About admin.py**
+
+![about admins py](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/9708e8c8-202c-467c-bd66-4af317b6c5e8)
+
+
 
 ## Models
 * Post Model
@@ -223,9 +360,37 @@ Located at the bottom of the post Detail page, this section enables users to sha
 
 [GitHub Issues](https://github.com/Code-Institute-Solutions/django-blog-starter-files/issues) served as another Agile tool for this project. Here, I employed my own user story template and bug template to keep track of my progress in the website development process.
 
-**Unresolved Bugs**
+## **Unresolved Bugs**
+
+![comment eror](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/28d1be68-05af-469a-a0a2-c50a15400e4f)
 
 
+![no of likes](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/951a87ac-187d-4aa0-8aa9-8028c842329b)
+
+- On the post detail page, the post likes and comments total are displayed next to an icon without any issues, as shown in the image above. 
+However, on the index page, the comment total doesn't display, but the likes total does. I attempted to resolve this issue by removing and adding the 'post.' prefix, but it was still unsuccessful.
+---
+![Picre18](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/9a288f32-755c-4742-b1c4-f90f8734f952)
+
+![Picre17](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/544a457b-1c8f-412f-b4fa-2202bb7d507c)
+
+![Picre19](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/57cbe1ea-6d75-4ebb-ab8e-001fc56c4a9d)
+
+![Picre20](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/14d46731-20aa-4b37-87f9-4a92df76a236)
+
+- This bug is particularly weird. In the **@media** decorator, when I set the height to 150px, it looks perfect on larger screens, but on the phone, the translucent mask layer only covers half of the image. However, when I set the height to 250px, it looks perfect on mobile devices, but now on larger screens, the translucent mask layer extends below the hero image, which doesn't look appealing. For now, I've prioritized the appearance on larger screens. 
+---
+![no of likes](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/d52f4adf-607d-4de8-b50e-dd2138ead9a2)
+
+![com space](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/11dc3ed5-d6cb-4672-b152-bb3c99461fcd)
+![no space com](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/b9cb54e6-4b8f-4985-99c0-f584941bae68)
+![likes space no display beside](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/d2b4483a-2e8b-477b-a76e-3a0e0cc5aced)
+
+![com below icon](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/35e2ceaa-d4ec-4e41-b339-1120a9438580)
+![display beside icon but no space](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/687652dd-96e1-4be0-9854-841014ddbdca)
+
+- A bug I encountered on the post detail page was the spacing between the icon and the number. While the likes icon and the like total are nicely spaced, the comment number either displays below the comment or too close to the icon. When I add a space between the icon and {{Total comment}}, the total comment displays below the icon. However, without the space, it displays beside the icon, but it's too close to the icon.
+---
 ![to lower case](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/3c6c2112-b572-45e8-a7b4-57d4392573fd) 
 
 ![js error 2](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/54f8031c-5863-4f85-9321-7022643d4037)
@@ -233,9 +398,36 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ![js error](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/8e791d91-101c-4f4a-b8c3-74c0634290d9)
 
 
-On the Contact/Order page My intention with this JavaScript code was to filter out necessary items from the menu. However, after extensive attempts to make it work properly, I couldn't figure out how to get it to function correctly. 
+- On the Contact/Order page My intention with this JavaScript code was to filter out necessary items from the menu. However, after extensive attempts to make it work properly, I couldn't figure out how to get it to function correctly. 
 I attempted to use AI assistance but still couldn't find a solution. It either incorrectly classified each individual word as invalid or failed to detect the error altogether.
 
+## **Resolved Bugs**
+
+![footer issue](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/2266e801-19e5-4d2c-bdd2-286a851056c7)
+![bug resolved](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/ac295905-452e-46f8-ab06-4a6ab130f295)
+
+- One daunting issue I faced was on the contact page, where for some reason the footer would display at the center middle of the screen. I addressed this problem by completely rearranging the position of the inputs, which resulted in a better layout than the original one in the end.
+---
+![message undelivered](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/ec24c824-d93e-429f-9276-d213faf2949b)
+![Pcture14](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/4995ee67-0ae9-4670-a3c5-e7382e767c18)
+![Pictu15](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/23cf4da2-68c6-4df2-8016-55f62ba27dc9)
+
+- A challenge I encountered arose when using the Zoho mail server. It failed to forward my emails to the client unless I manually confirmed and resent the email. This workflow proved highly inefficient, prompting me to seek an alternative solution. I made the decision to switch to the Gmail SMTP server, and after making a few adjustments and verifications, the issue was resolved satisfactorily.
+---
+![Pictur6](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/a297c354-ad37-4aca-aa47-aef0818fe160)
+
+- Another challenge I encountered occurred on the register page. Suddenly, I found myself unable to register any accounts on my website, which was perplexing given that everything seemed to be functioning properly until then. To tackle this unexpected issue, I took the approach of creating a new startapp that included two templates, one for the register page and the other for the login page, along with a Python form model. After integrating and configuring everything accordingly, the register template began to function as expected once again, and the login page operated smoothly as well.
+
+---
+![email error google smtp](https://github.com/Issam-Allymis/Delish-Dining-Delight/assets/126810074/f7142f82-88f7-4451-8de6-6b5fdb19cac6)
+
+- The error occurred because I forgot to verify my device in the Google settings. Google, for security reasons, was blocking my app from sending emails through its platform.
+
+## **Credits**
+
+- I watched this video for guidance with creating the contact page [Code with stein](https://www.youtube.com/watch?v=dnhEnF7_RyM)
+- I watched these videos for guidance in creating the register and login page [Cloud With Django](https://www.youtube.com/watch?v=Z3qTXmT0yoI), [MyAcademy](https://www.youtube.com/watch?v=cu-1EdSMzK0)
+- I watched these videos for guidance in configuring the gmail SMTP server [Discover you](https://www.youtube.com/watch?v=KG-WFSEDwnI), [Codemy.com](https://www.youtube.com/watch?v=xNqnHmXIuzU) 
 
 ## Deployment
 
