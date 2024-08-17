@@ -33,8 +33,8 @@ class ContactForm(forms.ModelForm):
                 attrs={'class': 'form-control',
                 'placeholder': 'Email',
                 'style': 'width: 500px;'
-                }
-            ),
+            }
+        ),
             'address': forms.TextInput(
                 attrs={
                     'class': 'form-control',
