@@ -51,6 +51,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     approved = models.BooleanField(default=False)
 
     class Meta:
@@ -63,4 +64,5 @@ class Comment(models.Model):
         """
         Return a string representation of the comment.
         """
-        return f"Comment {self.body} by {self.name}"
+        return f'{self.name}: {self.body[:20]}'
+        # return f"Comment {self.body} by {self.name}"

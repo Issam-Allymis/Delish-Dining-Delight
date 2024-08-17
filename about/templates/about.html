@@ -5,20 +5,39 @@
     <div class="row">
         <div class="col aboutext">
             <h1>Welcome to DelishDiningDelight</h1>
-            <hr>
-            <p>If you're in search &#x1F50D; of the perfect steak recipe that leaves you with a satisfying smile &#x1F969;,
-                look no further &#x1F5FA;&#xFE0F;. Our culinary expertise is dedicated to delivering delicious steak 
-                recipes and enticing imagery that will tantalize your taste buds. Whether you're craving 
-                a succulent cut or seeking inspiration for your next culinary adventure, we have you covered.
-                
-                Your <strong>desires</strong>, our recipes—this is what we stand for. Don't hesitate any longer. Join our 
-                community today to unlock the ability to like, comment, and share your culinary insights 
-                with fellow enthusiasts. We look forward to welcoming you to our passionate food-loving community. 
-                See you on the other side! &#x1F465;
-                <br>
+                <hr>
+                    <p>
+                        If you're in search &#x1F50D; of the perfect steak recipe that leaves you with a satisfying smile &#x1F969;,
+                        look no further &#x1F5FA;&#xFE0F;. Our culinary expertise is dedicated to delivering delicious steak 
+                        recipes and enticing imagery that will tantalize your taste buds. Whether you're craving 
+                        a succulent cut or seeking inspiration for your next culinary adventure, we have you covered.
+                        
+                        Your <strong>desires</strong>, our recipes—this is what we stand for. Don't hesitate any longer. Join our 
+                        community today to unlock the ability to like, comment, and share your culinary insights 
+                        with fellow enthusiasts. We look forward to welcoming you to our passionate food-loving community. 
+                        See you on the other side! &#x1F465;
+                    <br>
                 <a class="nav-link" href="{% url 'account_signup' %}">Signup</a>
             </p>
+            <div class="text-center">
+                <h2>Mission Statement</h2>
+                    <p>{{ about.mission_statement }}</p>
+                </div>
+            <div class="text-center">
+                <h2>History</h2>
+                    <p>{{ about.history|safe }}</p>
+                </div>
+            <div class="text-center">
+                <h2>Values</h2>
+                    <p>{{ about.values|safe }}</p>
+                </div>
+            <div class="text-center">
+                <h2>Milestones</h2>
+                    <p>{{ about.milestones|safe }}</p>
+                <a class="nav-link" href="{% url 'account_signup' %}">Signup</a>
+            </div>
         </div>
     </div>
 </div>
+
 {% endblock %}

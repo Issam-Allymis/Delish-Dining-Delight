@@ -3,20 +3,8 @@ Module containing views for the about page functionality.
 """
 
 from django.shortcuts import render
-from django.views import View
+from .models import About
 
-
-class AboutPage(View):
-    """
-    Class based View to render About Page
-    """
-
-    def get(self, request, *args, **kwargs):
-        """
-        Renders about page
-        """
-
-        return render(
-            request,
-            "about.html",
-        )
+def AboutPage(request):
+    about_content = About.objects.first()  # Assuming there's only one about page entry
+    return render(request, 'about.html', {'about': about_content})

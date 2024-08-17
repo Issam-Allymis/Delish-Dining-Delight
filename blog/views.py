@@ -2,11 +2,12 @@
 Module containing views for the blog application.
 """
 
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 
 
@@ -91,3 +92,44 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+@login_required
+def update_comment(request, comment_id):
+    """View for handling comment editing."""
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    # Debugging output
+    print(f"Comment post slug: {comment.post.slug}")
+
+    # Check if the logged-in user is the author of the comment
+    if request.user.username != comment.name:
+        messages.error(request, "You are not authorized to edit this comment.")
+        return redirect('post_detail', slug=comment.post.slug)
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your comment was updated successfully.')
+            return redirect('post_detail', slug=comment.post.slug)
+    else:
+        form = CommentForm(instance=comment)
+
+    return render(request, 'update_comment.html', {'form': form})
+
+@login_required
+def delete_comment(request, comment_id):
+    """View for handling comment deletion."""
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    # Check if the logged-in user is the author of the comment
+    if request.user.username != comment.name:
+        messages.error(request, "You are not authorized to delete this comment.")
+        return redirect('post_detail', slug=comment.post.slug)
+
+    if request.method == 'POST':
+        comment.delete()
+        messages.success(request, 'Your comment was deleted successfully.')
+        return redirect('post_detail', slug=comment.post.slug)
+
+    return render(request, 'delete_comment.html', {'comment': comment})

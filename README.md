@@ -351,6 +351,73 @@ Located at the bottom of the post Detail page, this section enables users to sha
 ||created_on|DateTimeField|
 ||approved|BooleanField|
 
+## Testing
+
+### Manual Testing
+
+#### User Registration
+
+- **Expected:** Feature allows new users to register with a unique username, email, and password.
+- **Testing:** Attempt to register with valid and invalid data (e.g., missing email, password mismatch).
+- **Result:** Feature works as expected with valid data. Shows error messages when invalid data is provided.
+- **Fix:** None required.
+
+#### Comment CRUD Operations
+
+- **Expected:** Users should be able to add, edit, and delete comments.
+- **Testing:** 
+  1. Navigate to a post detail page.
+  2. Add a new comment and ensure it appears.
+  3. Edit the comment and verify changes.
+  4. Delete the comment and check if it's removed.
+- **Result:** Comments are successfully added, edited, and deleted. 
+- **Fix:** None required.
+
+### Automated Testing
+
+```python
+from django.test import TestCase
+from .models import Comment, Post
+from django.contrib.auth.models import User
+
+class CommentModelTest(TestCase):
+    def setUp(self):
+        # Creating a user for the test
+        self.user = User.objects.create_user(username='testuser', password='password')
+
+        # Creating a post that will be associated with the comment
+        self.post = Post.objects.create(title='Test Post', content='Test Content', author=self.user)
+
+        # Creating a comment linked to the post and the user
+        self.comment = Comment.objects.create(post=self.post, author=self.user, content='Test Comment')
+
+    def test_comment_creation(self):
+        # Check if the comment is created correctly
+        self.assertEqual(self.comment.content, 'Test Comment')
+        self.assertEqual(self.comment.author.username, 'testuser')
+        self.assertEqual(self.comment.post.title, 'Test Post')
+
+    def test_user_association(self):
+        # Verify that the comment is associated with the correct user
+        self.assertEqual(self.comment.author, self.user)
+
+    def test_post_association(self):
+        # Verify that the comment is associated with the correct post
+        self.assertEqual(self.comment.post, self.post)
+
+    def test_comment_count(self):
+        # Verify that the post has the correct number of associated comments
+        self.assertEqual(self.post.comments.count(), 1)
+        # Add another comment to ensure count increases
+        Comment.objects.create(post=self.post, author=self.user, content='Another Test Comment')
+        self.assertEqual(self.post.comments.count(), 2)
+
+    def test_string_representation(self):
+        # Test the __str__ method of the comment
+        expected_string = f"Comment by {self.user.username} on {self.post.title}"
+        self.assertEqual(str(self.comment), expected_string)
+
+
 ## Agile Tool
 **GitHub Projects:**
 

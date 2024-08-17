@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'SECRET_KEY'
+SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -84,11 +84,6 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('CLOUD_NAME'),
-    'API_SECRET': config('API_SECRET'),
-    'API_KEY': config('API_KEY'),
-}
 
 SITE_ID = 1
 
@@ -142,7 +137,7 @@ WSGI_APPLICATION = 'delishdiningdelight.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-DATABASE_URL = "postgres://viqiccuc:QA-_ufFJ8O_dksxBlTJZCfJGSbf_33gH@flora.db.elephantsql.com/viqiccuc"
+DATABASE_URL = config('DATABASE_URL')
 
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_URL)
