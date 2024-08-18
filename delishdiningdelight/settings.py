@@ -34,7 +34,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -50,11 +50,6 @@ ALLOWED_HOSTS = [
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('CLOUD_NAME'),
-    'API_SECRET': config('API_SECRET'),
-    'API_KEY': config('API_KEY'),
-}
 
 # Application definition
 
