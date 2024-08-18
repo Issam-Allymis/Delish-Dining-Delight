@@ -7,5 +7,5 @@
     {{ form.as_p }}
     <button type="submit">Save changes</button>
   </form>
-  <a href="{% url 'post_detail' slug=comment.post.slug %}">Cancel</a>
+  <a href="{% if comment.post.slug %}{% url 'post_detail' slug=comment.post.slug %}{% else %}{% url 'home' %}{% endif %}">Cancel</a>
 {% endblock %}
