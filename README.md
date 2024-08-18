@@ -375,7 +375,7 @@ Located at the bottom of the post Detail page, this section enables users to sha
 
 ### Automated Testing
 
-```python
+python
 from django.test import TestCase
 from .models import Comment, Post
 from django.contrib.auth.models import User
@@ -467,6 +467,14 @@ However, on the index page, the comment total doesn't display, but the likes tot
 
 - On the Contact/Order page My intention with this JavaScript code was to filter out necessary items from the menu. However, after extensive attempts to make it work properly, I couldn't figure out how to get it to function correctly. 
 I attempted to use AI assistance but still couldn't find a solution. It either incorrectly classified each individual word as invalid or failed to detect the error altogether.
+
+- I attempted to fix a bug related to redirecting to the blog page after editing a comment but encountered a NoReverseMatch error. Despite trying various approaches to ensure the redirect would work correctly, the error persists, specifically when trying to use the post_detail view with a slug parameter.
+
+I have confirmed that this error occurs only during the update process and not when deleting a comment, which successfully redirects to the blog page without issues. This discrepancy suggests that the problem might be tied to how slugs are handled or referenced in the update comment view.
+
+I have verified that slugs are correctly populated for posts and have checked the URL configurations and templates to ensure they are set up to handle the slug parameter appropriately. However, the NoReverseMatch error continues to prevent the correct redirect.
+
+I’m currently seeking further insights or solutions to resolve this issue and make sure that editing a comment correctly redirects back to the blog page.
 
 ## **Resolved Bugs**
 
