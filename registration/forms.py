@@ -23,7 +23,7 @@ class CreateUserForm(UserCreationForm):
         )
     )
     email = forms.EmailField(
-        max_length=254,
+        max_length=100,
         required=True,
         widget=forms.EmailInput(
             attrs={
@@ -71,12 +71,12 @@ class CreateUserForm(UserCreationForm):
         ]
 
 
-
 # Authenticate a user (Model Form)
 
 class SigninForm(AuthenticationForm):
     """Form for authenticating a user."""
     username = forms.CharField(
+        max_length=30,
         widget=TextInput(
             attrs={
                 'placeholder': 'Username', 
@@ -85,6 +85,7 @@ class SigninForm(AuthenticationForm):
         )
     )
     password = forms.CharField(
+        max_length=30,
         widget=PasswordInput(
             attrs={
                 'placeholder': 'Password', 
