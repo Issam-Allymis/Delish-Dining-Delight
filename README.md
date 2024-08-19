@@ -179,8 +179,8 @@ Located at the bottom of the post Detail page, this section enables users to sha
 * **[PostgreSQL](https://www.solarwinds.com/database-insights-sql-server?CMP=KNC-TAD-BNG-SW_UKI_X_PP_CPC_LD_EN_PRODB_TIN-XDB&361868327~1174279389784930_o_c_postgresql-p~~~p72708223620&s_kwcid=AL!11508!3!!p!!o!!postgresql&ds_cid=71700000098795352&ds_agid=58700007962410432&network=o&device=c&keyword=postgresql&matchtype=p&creative=&feeditemid=&&msclkid=cfe3da19899b17fd4067bf43f278ca17&gclid=cfe3da19899b17fd4067bf43f278ca17&gclsrc=3p.ds)** - used as the relational database management.
 * **[ElephantSQL](https://www.elephantsql.com/docs/index.html)** - used as the Postgres database.
 * **[Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)** - used for online static file storage.
-*  **[ImageResizer](https://imageresizer.com/)**
-
+* **[ImageResizer](https://imageresizer.com/)**
+* **[Beefree](https://beefree.io/)** - used for designing email template.
 ## General testing
 ### Methods
 - **HTML** has been validated through the [W3C HTML5 Validator](https://validator.w3.org/).
@@ -503,7 +503,7 @@ I’m currently seeking further insights or solutions to resolve this issue and 
 - I watched this video for guidance with creating the contact page [Code with stein](https://www.youtube.com/watch?v=dnhEnF7_RyM)
 - I watched these videos for guidance in creating the register and login page [Cloud With Django](https://www.youtube.com/watch?v=Z3qTXmT0yoI), [MyAcademy](https://www.youtube.com/watch?v=cu-1EdSMzK0)
 - I watched these videos for guidance in configuring the gmail SMTP server [Discover you](https://www.youtube.com/watch?v=KG-WFSEDwnI), [Codemy.com](https://www.youtube.com/watch?v=xNqnHmXIuzU) 
-
+- I watched [CBIAnalytics](https://www.youtube.com/watch?v=e826ygJ0-gk) for guidance in designing a visually appealing email template. 
 ## Deployment
 
 **Cloudinary**
