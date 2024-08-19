@@ -2,7 +2,9 @@
 Module containing views for the contact form functionality.
 """
 
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 from django.shortcuts import render, redirect
 from django.views import generic, View
 from django.template.loader import render_to_string 
@@ -27,10 +29,25 @@ def contact_view(request):
             message = f"Message from: {name}\nEmail: {email}\nAddress: {address}\n\nContent:\n{content}"
             from_email = email
             recipient_list = [config('EMAIL_HOST_USER')] 
+            html_message = render_to_string("email.html")
+            plain_message = strip_tags(html_message)
+
+            # Define the email
+            email = EmailMultiAlternatives(
+                subject = subject,
+                body = plain_message,
+                from_email = email,
+                to = [config('EMAIL_HOST_USER')],
+            )
+
+            email.attach_alternative(html_message, "text/html")
+            # message.send()
+            
             try:
-                send_mail(subject, message, from_email, recipient_list) 
+                # send_mail(subject, message, from_email, recipient_list) 
+                email.send()
                 messages.success(request, 'Your message has been sent.')
-                return redirect('contact')
+                return redirect('contact_success')
             
             except Exception as e:
                 import traceback
